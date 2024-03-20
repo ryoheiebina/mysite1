@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <a class="pagetop" href="#"><div class="pagetop__arrow"></div></a>
+    <div class="background">
+        <h1><a href="index.html"><img class="headerlogo" src="images/logo.svg" alt="logo"></a></h1>
+        <section class="contact">
+        <h3>CONTACT</h3>
+    <p>ご予約・予約内容の変更については直接サロンまでお電話いただくか予約ページにてご連絡ください。ご連絡先のメールアドレス・お問い合わせ内容をご記入の上｢送信する｣ボタンをクリックしてください。※メールアドレス、お問い合わせ内容は必ずご記入ください。</p>
+    <form action="program.php" method="post" >
+        <dl>
+            <dt>お名前<span class="must">※</span></dt>
+            <dd>
+                <input type="text" name="name" required placeholder="田中 太郎">
+            </dd>
+            <dt>ふりがな<span class="must">※</span></dt>
+            <dd>
+                <input type="text" name="kana" required placeholder="たなか たろう">
+            </dd>
+            <dt>メールアドレス<span class="must">※</span></dt>
+            <dd>
+                <input type="email" name="email" required placeholder="sample@test.com">
+            </dd>
+            <dt>お問い合わせ・ご質問内容</dt>
+            <dd>
+                <textarea name="comment" cols="60" rows="10"></textarea>
+            </dd>
+        </dl>
+        <p class="submit"><input type="submit" name="submit" value="送信する"></p>
+        </form>
+    </section>
+</div>
+<footer class="contact"><p class="tel-number">03-5759-5660</p>
+    <p>東京都目黒区目黒2-10-8 第2アトモスフィア青山ビル5F</p>
+    <a href="index.html"><img src="images/logo.svg" alt="理容室ロゴ"></a>
+    <p><small>&copy;BARBER NONAME All Rights Reserved.</small></p>
+    <a href="https://www.instagram.com/re2407254/"><img src="images/instagram.svg" alt="Instagramリンク"class="snslink" width="30" height="30"></a>
+        <a href="https://youtu.be/YhzJNckzYCA"><img src="images/youtube.svg" class="snslink"width="30" height="30"></a>
+</footer>
+</body>
+</html>

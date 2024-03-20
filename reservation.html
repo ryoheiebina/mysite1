@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESERVATION</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+    <div class="background">
+        <h1><a href="index.html"><img  class="headerlogo" src="images/logo.svg" alt="logo"></a></h1>
+        <section class="contact">
+        <h3>RESERVATION</h3>
+    <p>メニュー選択欄のチェックボックスでご希望の施術をクリック後、日時選択欄で希望日時を選択し、ページ下部の「予約する」をクリックしてください。</p>
+    <form action="program.php" method="post" >
+        <dl>
+            <dt>お名前<span class="must">※</span></dt>
+            <dd>
+                <input type="text" name="name" required placeholder="田中 太郎">
+            </dd>
+            <dt>ふりがな<span class="must">※</span></dt>
+            <dd>
+                <input type="text" name="kana" required placeholder="たなか たろう">
+            </dd>
+            <dt>電話番号<span class="must">※</span></dt>
+            <dd>
+                <input type="tel" name="tel" required placeholder="090-XXXX-XXXX">
+            </dd>
+            <dt>施術メニュー<span class="must">※</span></dt>
+            <dd>
+            <input type="checkbox" style="accent-color: green" name="category" value="カット">カット
+            <input type="checkbox" style="accent-color: green;" name="category" value="カラー">カラー
+            <input type="checkbox" style="accent-color: green;" name="category" value="パーマ">パーマ
+            <input type="checkbox" style="accent-color: green;" name="category" value="シェービング">シェービング
+        </dd>
+            <dt>日程<span class="must">※</span></dt>
+            <dd>
+                <input type="date" name="date" required>
+            </dd>
+            <dt>時間<span class="must">※</span></dt>
+            <dd>
+                <select name="time">
+                    <option value="選択してください" selected>ご希望の時間を選択してください</option>
+                    <option value="10:00" >10:00</option>
+                    <option value="11:00" >11:00</option>
+                    <option value="12:00" >12:00</option>
+                    <option value="13:00" >13:00</option>
+                    <option value="14:00" >14:00</option>
+                    <option value="15:00" >15:00</option>
+                    <option value="16:00" >16:00</option>
+                    <option value="17:00" >17:00</option>
+                    <option value="18:00" >18:00</option>
+                    <option value="19:00" >19:00</option>
+                </select>
+            </dd>
+            <dt>その他・ご要望</dt>
+            <dd>
+                <textarea name="comment" cols="60" rows="10"></textarea>
+            </dd>
+        </dl>
+        <p class="submit"><input type="submit" name="submit" value="予約する"></p>
+         </form>
+    </section>
+</div>
+<footer class="contact"><p class="tel-number">03-5759-5660</p>
+    <p>東京都目黒区目黒2-10-8 第2アトモスフィア青山ビル5F</p>
+    <a href="index.html"><img src="images/logo.svg" alt="理容室ロゴ"></a>
+    <p><small>&copy;BARBER NONAME All Rights Reserved.</small></p>
+    <a href="https://www.instagram.com/re2407254/"><img src="images/instagram.svg" alt="Instagramリンク" class="snslink" width="30" height="30"></a>
+        <a href="https://youtu.be/YhzJNckzYCA"><img src="images/youtube.svg" class="snslink" width="30" height="30"></a>
+</footer>
+</body>
+</html>
